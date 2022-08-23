@@ -1,0 +1,12 @@
+package definitions;
+	typedef enum{ST0,ST1,ST2}state_t;
+	typedef struct{
+		real i,r;
+	}Complex;
+	function Complex Add(Complex a,b);
+		Complex add;
+		add.r = a.r + b.r;
+		add.i = a.i + b.i;
+	endfunction
+endpackage
+
